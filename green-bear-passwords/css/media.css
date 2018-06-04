@@ -1,0 +1,448 @@
+/*Мобильное меню*/
+.navbar-toggle{
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    padding: 10px 30px;
+}	
+.navbar-toggle .title_bar {
+    float: left;
+    font: 18px Lato;
+    margin-right: 12px;
+    margin-top: -1px;
+}
+.navbar-toggle .icon_menu {
+    float: left;
+}
+.navbar-toggle .icon-bar {
+    background: #4a4a4a;
+    display: block;
+    height: 4px;
+    margin-top: 5px;
+    width: 30px;
+}
+.navbar-toggle .icon-bar:first-child{
+	margin-top: 0;
+}
+@media (max-width: 1340px){
+	.you_know {
+		background: transparent url("../images/css/bg_know.png") no-repeat scroll calc(50% + 52px) top;
+	}
+	.you_know .text_content {
+		width: 100%;
+		margin-left: 0;
+		background: none;
+	}
+	.you_know .text_content .content_know {
+		left: 248px;
+	}
+	.you_know .text_content .cloud {
+		right: 316px;
+	}
+
+	.you_know .text_content .text_block {
+		left: 312px;
+	}
+	.you_know .text_content .read_more {
+		left: 376px;
+	}
+	.you_know .arrow {
+		bottom: -42px;
+		right: 367px;
+	}
+	.online_presence img {
+		width: 210px;
+	}
+	.online_presence .arrow {
+		bottom: -186px;
+		left: 569px;
+	}
+	.feadback .form_content {
+		padding: 62px 20px 72px 330px;
+	}	
+	.feadback .inp.mail {
+		width: 334px;
+	}
+	.feadback .gift {
+		font: 16px MuseoSansCyrl700;
+	}
+	.feadback .free {
+		font: 19px MuseoSansCyrl700;
+	}
+}
+@media (max-width: 1100px){
+	.block_inside {
+		max-width: 990px;
+	}
+	.you_know .text_content .cloud {
+		right: 250px;
+	}
+	.feadback .sub {
+		width: 250px;
+	}	
+}
+@media (max-width: 994px){
+	.block_inside {
+		max-width: 700px;
+		position: relative;
+	}
+	.mob_img{
+		display: block;
+	}
+	.you_know .arrow {
+		bottom: -52px;
+		right: 327px;
+	}	
+	.feadback .inp.mail{
+		margin-bottom: 20px;
+	}	
+	#header {
+		padding: 14px 0 20px;
+		text-align: center;
+	}
+	.people{
+		background: transparent url("../images/css/people_mobile.png") no-repeat scroll 0 0;
+	    left: 0;
+		position: absolute;
+		top: 180px;	
+		width: 141px;
+		height: 191px;
+	}
+	.bear{
+		position: absolute;
+		right: 0;
+		top: 143px;
+		background: transparent url("../images/css/bear_mobile.png") no-repeat scroll 0 0;
+		width: 242px;
+		height: 232px;
+	}
+	.you_know {
+		background: #b3e3e4;
+	}
+	
+	.you_know .text_content .content_know {
+		left: 72px;
+		top: -9px;
+	}
+	.you_know .text_content .cloud {
+		right: 227px;
+		top: 198px;
+	}
+	.you_know .text_content .text_block {
+		left: 145px;
+		top: 260px;
+		width: 280px;
+	}
+	.you_know .text_content .read_more {
+		left: 212px;
+		top: 350px;
+	}
+	.you_know .text_content{
+		height: 435px;
+	}
+	.arrow{
+		background-image: url("../images/css/bg_arrow_mob.png");
+		width: 36px;
+		height: 73px;
+	}
+	.account{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		padding: 95px 0 95px;
+	}
+
+	.account .content_account {
+		margin-left: 0;
+		padding-left: 0;
+		text-align: center;
+	}	
+	.account .title_block, .online_presence .title_block, .feadback .form_content .title_block {
+		font: 26px CMHELLOILIKEYOUW01Bold;
+	}	
+
+	.account .title_block:after, .online_presence .title_block:after, .feadback .form_content .title_block:after {
+		background: transparent url("../images/css/bg_title_line.png") no-repeat scroll center top / cover ;
+		height: 12px;
+		left: 50%;
+		margin-left: -20px;
+		width: 40px;
+	}	
+	.account p{
+		font: 14px/20px MuseoSansCyrl300;
+	}
+	.account img{
+		bottom: -100px;
+		position: absolute;
+		top: unset;
+		width: 108px;
+	}
+	.account .conclusions{
+		padding-left: 98px;
+		padding-top: 93px;
+		text-align: left;
+	}
+	.online_presence:before,
+	.online_presence:after{
+		height: 65px;
+		background-size: cover;
+	}
+	.online_presence:before {
+		top: -65px;
+	}
+	.online_presence:after{
+		bottom: -65px;
+	}
+	.online_presence .content_presence {
+		padding-top: 62px;
+	}	
+	.online_presence {
+		margin-bottom: 65px;
+		margin-top: 65px;
+		text-align: center;
+	}
+	.online_presence .content_presence {
+		width: 100%;
+	}	
+	.online_presence img{
+		display: none;
+	}
+	.online_presence ol li{
+		font-size: 14px;
+		padding: 60px 0 0;
+	}
+	.online_presence ol li:before {
+		left: 50%;
+		margin-left: -25px;
+	}
+
+	.online_presence ol li strong {
+		font-size: 17px;
+		margin-bottom: 2px;
+	}	
+	.account .arrow {
+		bottom: -162px;
+		left: 312px;
+	}	
+	.online_presence .arrow {
+		bottom: -92px;
+		left: 330px;
+	}
+
+	.feadback {
+		padding: 126px 0 0;
+	}	
+	.feadback .form_content {
+		height: auto;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.feadback .top_text {
+		font: 16px MuseoSansCyrl700;
+	}
+
+	.feadback .free {
+		font: 16px/21px MuseoSansCyrl700;
+		margin: 22px 0 258px 0;
+	}	
+	.feadback img {
+		display: block;
+		left: 50%;
+		margin-left: -190px;
+		max-width: 100%;
+	}	
+	.feadback .form_content .title_block {
+		margin-bottom: 37px;
+	}
+	.feadback .form_content .title_block:after {
+		bottom: -25px;
+	}	
+	.feadback .check{
+		text-align: left;
+	}
+	.feadback .inp.mail{
+		width: 100%;
+	}
+	.feadback .sub {
+		margin-left: 0;
+		width: 100%;
+	}	
+	.left_footer {
+		width: 340px;
+	}
+	#footer {
+		padding: 50px 0;
+	}
+
+	
+}
+@media (max-width: 730px){
+	.block_inside {
+		max-width: 320px;
+	}
+	.people {
+		left: -31px;
+	}
+	.bear {
+		right: -92px;
+	}
+
+	.you_know .text_content {
+		height: 510px;
+	}	
+	.you_know .text_content .content_know {
+		background: transparent url("../images/css/bg_cloud.png") no-repeat scroll center top / cover ;
+		height: 171px;
+		left: -7px;
+		padding: 54px 0 0;
+		width: 303px;
+	}
+	.you_know .text_content .title_block {
+		font: 26px CMHELLOILIKEYOUW01Bold;
+	}
+
+	.you_know .text_content .text_block {
+		font-size: 14px;
+		left: 0;
+		line-height: 18px;
+		top: 376px;
+		width: 100%;
+	}
+	.you_know .text_content .desc_content {
+		line-height: 18px;
+		padding: 0 30px;
+		margin-top: 1px;
+	}	
+	.you_know .text_content .read_more {
+		bottom: 33px;
+		left: 50%;
+		margin-left: -84px;
+		top: unset;
+	}
+	.link_footer {
+		text-align: center;
+		width: 100%;
+	}
+	.left_footer {
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	.you_know .text_content .cloud {
+		right: 117px;
+		top: 165px;
+	}	
+	.you_know .arrow {
+		bottom: -50px;
+		right: 120px;
+	}
+	.account .arrow {
+		bottom: -167px;
+		left: 133px;
+	}
+	.account p {
+		margin-bottom: 19px;
+	}	
+	.account img {
+		bottom: -100px;
+	}
+	.online_presence .arrow {
+		left: 133px;
+	}
+	.online_presence ol {
+		margin-top: 40px;
+		float: left;
+		width: 100%;
+	}
+	.online_presence ol li{
+		margin-bottom: 48px;
+	}
+	.online_presence ol p {
+	    line-height: 20px;
+	}
+	.online_presence .tips {
+		font: 18px/24px MuseoSansCyrl300;
+		width: 110px;
+		margin-top: 105px;
+	}
+	.online_presence img{
+		display: block;
+		position: absolute;
+		right: 37px;
+		top: 168px;
+		margin: 0;
+		width: 120px;
+	}
+
+	.feadback .free {
+		font: 16px/21px MuseoSansCyrl700;
+		margin: 22px 0 215px 0;
+	}	
+	.feadback img {
+		display: block;
+		left: 0;
+		margin-left: 0;
+		max-width: 100%;
+		top: 243px;
+	}	
+	.feadback .gift span:after {
+		background: transparent url("../images/css/bg_gift_mb.png") no-repeat scroll 0 0;
+		display: inline-block;
+		height: 20px;
+		position: relative;
+		right: -3px;
+		top: 3px;
+		width: 21px;
+	}
+	.thanks_form{
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.feadback.saccesful img{
+		display: none;
+	}
+	.thanks_form .title_block {
+		margin-bottom: 54px !important;
+	}
+}
+@media (max-width: 530px){
+	.you_know {
+		overflow: hidden;
+	}
+	.you_know .text_content .content_know {
+		top: 11px;
+	}	
+	.people {
+		top: 200px;
+	}
+	.bear {
+		top: 163px;
+	}
+	.you_know .text_content .cloud {
+		top: 187px;
+	}
+	.you_know .text_content .text_block {
+		top: 400px;
+	}
+	.you_know .text_content .read_more {
+		bottom: 25px;
+	}	
+	.you_know .text_content {
+		height: 530px;
+	}
+	.you_know .arrow {
+		display: none;
+	}
+	.mob_arrow.know {
+		background-image: url("../images/css/bg_arrow_mob.png");
+		display: block;
+		height: 73px;
+		left: 142px;
+		position: absolute;
+		top: -112px;
+		width: 36px;
+	}
+}

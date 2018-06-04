@@ -1,0 +1,548 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+@font-face {
+    font-family: 'CMHELLOILIKEYOUW01Bold';
+    src: url('../fonts/CMH/CMHELLOILIKEYOUW01Bold.eot');
+    src: url('../fonts/CMH/CMHELLOILIKEYOUW01Bold.eot') format('embedded-opentype'),
+         url('../fonts/CMH/CMHELLOILIKEYOUW01Bold.woff2') format('woff2'),
+         url('../fonts/CMH/CMHELLOILIKEYOUW01Bold.woff') format('woff'),
+         url('../fonts/CMH/CMHELLOILIKEYOUW01Bold.ttf') format('truetype'),
+         url('../fonts/CMH/CMHELLOILIKEYOUW01Bold.svg#CMHELLOILIKEYOUW01Bold') format('svg');
+}
+@font-face {
+    font-family: 'MuseoSansCyrl300';
+    src: url('../fonts/museo300/MuseoSansCyrl_0.eot');
+    src: url('../fonts/museo300/MuseoSansCyrl_0.eot') format('embedded-opentype'),
+         url('../fonts/museo300/MuseoSansCyrl_0.woff2') format('woff2'),
+         url('../fonts/museo300/MuseoSansCyrl_0.woff') format('woff'),
+         url('../fonts/museo300/MuseoSansCyrl_0.ttf') format('truetype'),
+         url('../fonts/museo300/MuseoSansCyrl_0.svg#MuseoSansCyrl_0') format('svg');
+}
+@font-face {
+    font-family: 'MuseoSansCyrl500';
+    src: url('../fonts/museo500/MuseoSansCyrl_1.eot');
+    src: url('../fonts/museo500/MuseoSansCyrl_1.eot') format('embedded-opentype'),
+         url('../fonts/museo500/MuseoSansCyrl_1.woff2') format('woff2'),
+         url('../fonts/museo500/MuseoSansCyrl_1.woff') format('woff'),
+         url('../fonts/museo500/MuseoSansCyrl_1.ttf') format('truetype'),
+         url('../fonts/museo500/MuseoSansCyrl_1.svg#MuseoSansCyrl_1') format('svg');
+}
+@font-face {
+    font-family: 'MuseoSansCyrl700';
+    src: url('../fonts/museo700/MuseoSansCyrl_2.eot');
+    src: url('../fonts/museo700/MuseoSansCyrl_2.eot') format('embedded-opentype'),
+         url('../fonts/museo700/MuseoSansCyrl_2.woff2') format('woff2'),
+         url('../fonts/museo700/MuseoSansCyrl_2.woff') format('woff'),
+         url('../fonts/museo700/MuseoSansCyrl_2.ttf') format('truetype'),
+         url('../fonts/museo700/MuseoSansCyrl_2.svg#MuseoSansCyrl_2') format('svg');
+}
+body {
+	font: 16px/24px MuseoSansCyrl500;
+	width: 100%;
+	background: transparent url("../images/css/bg_figures.png") no-repeat scroll calc(50% - 51px) 22px;
+	color: #333333;
+}
+img,
+iframe {
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+}
+input {
+	outline: none;
+}
+a {
+	color: #ec1f27;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+}
+a:hover {
+	text-decoration: none;
+}
+strong{
+	font-weight: 700;
+}
+.block_inside {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+}
+.block_inside:after,
+.feadback form:after{
+	content: "";
+	display: table;
+	width: 100%;
+	overflow: hidden;
+}
+.mob_img,
+.mob_arrow{
+	display: none;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	padding: 24px 0 1px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+}
+.arrow {
+    background: transparent url(../images/css/bg_arrow.png) no-repeat scroll center top;
+    content: "";
+    height: 140px;
+    position: absolute;
+    z-index: 99;
+    width: 69px;
+}
+.you_know .arrow {
+    bottom: -32px;
+    right: 457px;
+}
+.account .arrow {
+	bottom: -170px;
+    left: 460px;
+}
+.online_presence .arrow {
+    bottom: -156px;
+    left: 569px;
+}
+
+/*Did you know that�*/
+.you_know .text_content{
+    background: transparent url("../images/css/bg_know.png") no-repeat scroll center top;
+    height: 568px;
+    margin-left: -40px;
+    width: 1215px;
+	position: relative;
+}
+.you_know .text_content .content_know {
+    background: transparent url(../images/css/bg_cloud.png) no-repeat scroll center top;
+    height: 229px;
+    left: 328px;
+    padding: 85px 0 0 5px;
+    position: absolute;
+    text-align: center;
+    top: 71px;
+    width: 404px;
+}
+.you_know .text_content .title_block{
+    color: #c5171e;
+    font: 38px CMHELLOILIKEYOUW01Bold;
+}
+
+.you_know .text_content .desc_content {
+    line-height: 21px;
+    padding: 0 40px 0 45px;
+}
+
+.you_know .text_content .text_block {
+    left: 359px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 330px;
+    width: 347px;
+}
+
+.you_know .text_content .read_more {
+    background: #c5171e none repeat scroll 0 0;
+    border-radius: 3px;
+    bottom: 124px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50px;
+    left: 448px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 168px;
+}
+.you_know .text_content .cloud {
+    background: transparent url(../images/css/bg_cloud_small.png) no-repeat scroll center top;
+    height: 30px;
+    position: absolute;
+    right: 416px;
+    top: 222px;
+    width: 39px;
+}
+.read_more a {
+	color: #FFF;
+	text-decoration: none;
+	display:block;
+}
+
+.account{
+    padding: 98px 0 38px;
+}
+.account img {
+    float: left;
+    position: relative;
+    top: -3px;
+    left: 1px;
+}
+.account .content_account{
+    float: left;
+    margin-left: -168px;
+    padding-left: 232px;
+    width: 100%;
+}
+.account .title_block,
+.online_presence .title_block,
+.feadback .form_content .title_block{
+    font: 36px CMHELLOILIKEYOUW01Bold;
+    margin-bottom: 56px;
+	position: relative;
+}
+.account .title_block:after,
+.online_presence .title_block:after,
+.feadback .form_content .title_block:after{
+	background: transparent url("../images/css/bg_title_line.png") no-repeat scroll center top;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    width: 59px;
+    bottom: -22px;
+}
+.feadback .form_content .title_block:after {
+    bottom: -22px;
+    left: 154px;
+}
+.account .title_block span {
+	color: #d52e21;
+}
+.account p{
+    font-family: MuseoSansCyrl300;
+    margin-bottom: 24px;
+}
+.account .conclusions{
+    color: #d52b1e;
+    font: 30px CMHELLOILIKEYOUW01Bold;
+    margin-top: 38px;
+}
+
+
+/*So how do you secure your online presence?*/
+.online_presence {
+    background: #f8f8f8 none repeat scroll 0 0;
+    margin-bottom: 134px;
+    margin-top: 135px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.online_presence:before {
+    background: transparent url("../images/css/bg_online_top.png") no-repeat scroll center top;
+    content: "";
+    height: 135px;
+    left: 0;
+    position: absolute;
+    top: -135px;
+    width: 100%;
+}
+.online_presence:after {
+    background: transparent url("../images/css/bg_online_bottom.png") no-repeat scroll center top;
+    content: "";
+    height: 134px;
+    left: 0;
+    position: absolute;
+    bottom: -134px;
+    width: 100%;
+}
+.online_presence .content_presence{
+    float: left;
+    padding-top: 33px;
+    width: 730px;
+}
+.online_presence img {
+    float: right;
+    margin-top: 126px;
+    margin-right: 6px;
+}
+/*So how do you secure your online presence?*/
+.online_presence .tips {
+    color: #71aa31;
+    font: 24px MuseoSansCyrl300;
+    margin-bottom: 30px;
+}
+.online_presence ol li {
+	
+}
+.online_presence ol{
+	counter-reset: myCounter;
+}
+.online_presence ol li{
+    list-style: outside none none;
+    margin-bottom: 42px;
+    padding-left: 76px;
+    position: relative;
+}
+.online_presence ol li strong {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 22px;
+}
+.online_presence ol li:before {
+    background: #95d251 none repeat scroll 0 0;
+    border-radius: 60px;
+    color: #fff;
+    content: counter(myCounter, decimal);
+    counter-increment: myCounter 1;
+    display: inline-block;
+    font: 24px/50px CMHELLOILIKEYOUW01Bold;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    width: 50px;
+}
+
+/*����� �������� �����*/
+.feadback {
+    background: #fdfdfd url(../images/css/bg_figures.png) no-repeat scroll center top;
+    margin-top: -90px;
+    padding: 176px 0 0;
+}
+.feadback .block_content {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 51px rgba(0, 0, 0, 0.09);
+	position: relative;
+}
+.feadback img {
+    left: -70px;
+    position: absolute;
+    top: 166px;
+}
+.feadback .form_content{
+    height: 502px;
+    padding: 62px 0 72px 330px;
+    position: relative;
+}
+
+.feadback .top_text {
+    font: 17px MuseoSansCyrl700;
+}
+.feadback .free{
+    color: #006d55;
+    font: 20px MuseoSansCyrl700;
+    margin: 6px 0 9px;
+}
+.feadback .gift{
+    font: 17px MuseoSansCyrl700;
+}
+.feadback .gift span {
+    color: #006d55;
+	position: relative;
+}
+.feadback .gift span:after{
+    background: transparent url("../images/css/bg_gift.png") no-repeat scroll 0 0;
+    content: "";
+    height: 26px;
+    position: absolute;
+    right: -33px;
+    top: -8px;
+    width: 28px;
+}
+.feadback form{
+    margin-top: 32px;
+}
+.feadback .inp.mail{
+    float: left;
+    width: 370px;
+	position: relative;
+}
+.feadback .desc_fild{
+    background: #fff none repeat scroll 0 0;
+    color: #006d55;
+    font: 14px MuseoSansCyrl300;
+    left: 15px;
+    opacity: 0;
+    padding: 0 6px;
+    position: absolute;
+    top: -9px;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+}
+.feadback .inp.mail.active .desc_fild{
+    opacity: 1;
+}
+.feadback .inp.mail input{
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    box-shadow: none;
+    display: block;
+    font: 17px MuseoSansCyrl300;
+    height: 48px;
+    padding: 0 12px;
+    width: 100%;
+}
+.feadback .inp.mail input:hover {
+    border-color: #006d55;
+}
+.feadback .inp.mail input:focus {
+    border-color: #006d55;
+    box-shadow: 0 0 4px #006d55;
+}
+.feadback .sub{
+    float: left;
+    margin-left: 10px;
+    width: 270px;
+}
+.feadback .sub input{
+    background: #c5171e none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font: 14px MuseoSansCyrl700;
+    height: 48px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.feadback .sub input:hover,
+.you_know .text_content .read_more:hover{
+	background: #b01117;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+}
+
+.feadback .sub input[type=submit][disabled] {
+    background: #8f8f8f none repeat scroll 0 0;
+    cursor: default;
+}
+.feadback .check {
+	float: left;
+	width: 100%;
+}
+.feadback .check.top_check {
+    margin: 23px 0 13px;
+}
+.check input{
+	display: none;
+}
+.check input:checked+label{
+    color: #999999;
+    background: transparent url("../images/css/bg_check.png") no-repeat scroll 0 2px;
+}
+.check label {
+    background: transparent url(../images/css/bg_check_n.png) no-repeat scroll 0 2px;
+    color: #c5171e;
+    float: left;
+    font: 13px MuseoSansCyrl300;
+    padding-left: 26px;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.thanks_form {
+    display: none;
+    left: 454px;
+    position: absolute;
+    top: 121px;
+}
+.thanks_form .title_block {
+    font-size: 60px !important;
+    text-align: center;
+    margin-bottom: 67px !important;
+}
+.thanks_form .desc_form {
+    font: 17px/28px MuseoSansCyrl700;
+    text-align: center;
+}
+.thanks_form .desc_form span{
+    color: #d52b1e;
+}
+.feadback .form_content .thanks_form .title_block:after {
+    left: 50%;
+    margin-left: -30px;
+}
+.thanks_form {
+	
+}
+.thanks_form {
+	
+}
+.thanks_form {
+	
+}
+.thaaks_form {
+	
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+    background: #fdfdfd none repeat scroll 0 0;
+    padding: 58px 0 80px;	
+}
+.left_footer{
+	float: left;
+}
+.copyrait{
+    color: #8d8d8d;
+    font: 12px/18px MuseoSansCyrl300;
+    margin-top: 16px;
+}
+.link_footer{
+    float: right;
+    margin: -1px 0 0 0;
+}
+.link_footer .developer{
+    font: 15px MuseoSansCyrl700;
+    text-decoration: none;
+    margin-bottom: 6px;
+    display: block;
+}
+.link_footer .developer:hover{
+	color: #b01117;
+}
+.link_footer .policy{
+	text-align: center;
+}
+.link_footer .policy a{
+    color: #8f8f8f;
+    display: inline-block;
+    font: 13px MuseoSansCyrl300;
+    position: relative;
+    text-decoration: none;
+}
+.link_footer .policy a:hover{
+	color: #353535;
+}
+
+.link_footer .policy a:first-child {
+	margin-right: 25px;
+}
+.link_footer .policy a:first-child:after{
+	background: #8f8f8f none repeat scroll 0 0;
+    border-radius: 10px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    right: -17px;
+    top: 7px;
+    width: 4px;
+}
